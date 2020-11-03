@@ -438,15 +438,15 @@ type IDs []string
 
 type String struct {
 	Text string `xml:",chardata"`
-	Nil  string `xml:"nil,attr"`
+	Nil  string `xml:"nil,attr,omitempty"`
 }
 
 type Bool struct {
 	Value bool   `xml:",chardata"`
-	Label string `xml:"label,attr"`
+	Label string `xml:"label,attr,omitempty"`
 }
 
 type Amount struct {
 	Text string `xml:",chardata"`
-	Nil  string `xml:"nil,attr"`
+	Nil  string `xml:"nil,attr,omitempty"`
 }
